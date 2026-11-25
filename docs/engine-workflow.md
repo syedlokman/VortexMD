@@ -53,7 +53,7 @@ Like PyMOL and Mol*, VortexMD does not unwrap periodic boundary conditions (PBC)
 | Low-RAM System (2–4 GB RAM) | **100 MB** |
 | Mobile / Constrained ($< 2\text{ GB}$ RAM) | **50 MB** |
 
-When uncompressed trajectory size (`atoms × 3 × 4 bytes × frames`) exceeds the budget, `RingBufferManager` (`src/engine/trajectory.js`) streams only the active playback window and evicts distant frames—keeping JS heap usage flat (~13–40 MB in multi-system benchmarks up to 5.37 GB; see [Benchmark Results](../benchmark-results.md)).
+When uncompressed trajectory size (`atoms × 3 × 4 bytes × frames`) exceeds the budget, `RingBufferManager` (`src/engine/trajectory.js`) streams only the active playback window and evicts distant frames—keeping JS heap usage flat (~13–40 MB in headless CDP benchmarks up to 5.37 GB; see [Benchmark Results](benchmarks/benchmark-multi-system-report.md)).
 
 ## 5. Web Workers, Playback Clock & Offline PWA
 

@@ -9,7 +9,7 @@
  * - Injects topology and trajectory via Playwright input files
  * - Measures true Time-to-First-Frame (TTFF)
  * - Samples CDP JSHeapUsedSize, live FPS, and frame render latency during continuous streaming
- * - Exports Markdown report, raw JSON, summary & time-series CSVs, and updates benchmark-results.md
+ * - Exports Markdown report, raw JSON, and summary & time-series CSVs to docs/benchmarks/
  *
  * Usage:
  *   node scripts/benchmark-memory.js [targetUrl] [durationSeconds] [benchmarkDir] [outputDir] [sampleIntervalSec]
@@ -363,7 +363,7 @@ async function runBenchmarks() {
         }
         fs.writeFileSync(path.join(outputDir, 'benchmark-multi-system-timeseries.csv'), tsCsvHeader + tsCsvRows.join('\n') + '\n', 'utf-8');
 
-        // 4. Save Markdown Report (in docs/benchmarks/ and root benchmark-results.md)
+        // 4. Save Markdown Report in docs/benchmarks/
         const rows = results.map(r =>
             `| **${r.name}** | ${r.atomCount} | ${r.totalFrames} | ${r.trajectorySize} | ${r.ttffSeconds.toFixed(2)} s | ${r.baselineHeapMb.toFixed(2)} MB | ${r.peakHeapMb.toFixed(2)} MB | ${r.avgHeapMb.toFixed(2)} MB | ${r.heapDeltaMb.toFixed(2)} MB | ${r.meanFps !== null ? `${r.meanFps.toFixed(1)} FPS` : 'N/A'} |`
         ).join('\n');
@@ -387,7 +387,6 @@ ${rows}
 `;
 
         fs.writeFileSync(path.join(outputDir, 'benchmark-multi-system-report.md'), mdContent, 'utf-8');
-        fs.writeFileSync(path.resolve(process.cwd(), 'benchmark-results.md'), mdContent, 'utf-8');
 
         console.log(`\n[BENCHMARK] Exported all results to: ${outputDir}`);
         console.log(mdContent);

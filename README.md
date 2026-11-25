@@ -41,7 +41,7 @@ Like PyMOL and Mol*, VortexMD does not unwrap periodic boundary conditions (PBC)
 | [**Engine Workflow**](docs/engine-workflow.md) | Out-of-core `.xtc` streaming, binary indexing, IndexedDB caching, ring buffer, Web Workers, and PWA caching. |
 | [**Software Architecture & Boundaries**](docs/ARCHITECTURE.md) | Three-tier decoupling, `PUBLIC_API` & `EVENTS` contracts, and automated boundary enforcement. |
 | [**UI/UX Specification (v1.0 Frozen)**](docs/ui-ux.md) | Frozen v1.0 DOM layout, panel invariants, accessibility rules, and protected test hooks. |
-| [**Empirical Runtime Benchmarks**](benchmark-results.md) | Multi-system Chrome DevTools Protocol (CDP) heap, latency, and frame-rate measurements (28 MB–5.37 GB). |
+| [**Empirical Runtime Benchmarks**](docs/benchmarks/benchmark-multi-system-report.md) | Multi-system CDP & live browser head-to-head heap, latency, and frame-rate measurements (28 MB–5.37 GB). |
 | [**Reproducibility Guide**](docs/reproducibility.md) | Step-by-step instructions for running CDP benchmarks, browser console telemetry, and MDAnalysis validation. |
 | [**MDAnalysis Numerical Validation**](validation/README.md) | Executed validation notebooks and frame-by-frame CSVs for RMSD and 3D measurements. |
 

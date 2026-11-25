@@ -300,7 +300,6 @@ ${rows}
 `;
 
     fs.writeFileSync(path.join(outputDir, 'benchmark-multi-system-report.md'), mdContent, 'utf-8');
-    fs.writeFileSync(path.resolve(process.cwd(), 'benchmark-results.md'), mdContent, 'utf-8');
     console.log('\n[BENCHMARK] Complete! Wrote reports to', outputDir);
 }
 

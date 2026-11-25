@@ -30,7 +30,7 @@ node scripts/run-benchmark-offline.mjs [durationSec] [benchmarkDir] [outputDir] 
 node scripts/run-benchmark-offline.mjs 60 ../benchmarks_multi_system ./docs/benchmarks 5
 ```
 
-Outputs are written to `docs/benchmarks/` (`benchmark-multi-system-{raw.json,summary.csv,timeseries.csv,report.md}` and `fig_{memory_scaling,performance_matrix}.{svg,png}`) and mirrored to `benchmark-results.md`.
+Outputs are written to `docs/benchmarks/` (`benchmark-multi-system-{raw.json,summary.csv,timeseries.csv,report.md}` and `fig_{memory_scaling,performance_matrix}.{svg,png}`).
 
 ## 2. Live Browser Console Benchmark (Head-to-Head)
 

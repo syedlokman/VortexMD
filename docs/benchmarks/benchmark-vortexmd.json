@@ -1,0 +1,450 @@
+{
+  "summary": {
+    "tool": "VortexMD",
+    "url": "https://vortexmd.netlify.app/",
+    "ttffSec": 0.05,
+    "fullParseSec": 0.08,
+    "maxUiLockupSec": 0.08,
+    "totalFrozenSec": 0.62,
+    "baselineHeapMb": 36.46,
+    "peakHeapMb": 421.45,
+    "meanHeapMb": 303.33,
+    "meanFps": 59.2,
+    "stallCount": 10,
+    "samples": 83
+  },
+  "raw": {
+    "tool": "VortexMD",
+    "url": "https://vortexmd.netlify.app/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "startedAt": "2026-11-25T12:00:46.269Z",
+    "baselineHeapMb": 36.46,
+    "peakHeapMb": 421.45,
+    "heapSamples": [
+      {
+        "elapsedSec": 0.7,
+        "heapMb": 79.5
+      },
+      {
+        "elapsedSec": 1.7,
+        "heapMb": 83.04
+      },
+      {
+        "elapsedSec": 2.7,
+        "heapMb": 86.31
+      },
+      {
+        "elapsedSec": 3.7,
+        "heapMb": 81.22
+      },
+      {
+        "elapsedSec": 4.7,
+        "heapMb": 84.4
+      },
+      {
+        "elapsedSec": 5.7,
+        "heapMb": 77.61
+      },
+      {
+        "elapsedSec": 6.7,
+        "heapMb": 78.01
+      },
+      {
+        "elapsedSec": 7.7,
+        "heapMb": 80.93
+      },
+      {
+        "elapsedSec": 8.7,
+        "heapMb": 75.36
+      },
+      {
+        "elapsedSec": 9.7,
+        "heapMb": 119.42
+      },
+      {
+        "elapsedSec": 10.7,
+        "heapMb": 147.4
+      },
+      {
+        "elapsedSec": 11.7,
+        "heapMb": 167.5
+      },
+      {
+        "elapsedSec": 12.7,
+        "heapMb": 174.57
+      },
+      {
+        "elapsedSec": 13.7,
+        "heapMb": 194.06
+      },
+      {
+        "elapsedSec": 14.7,
+        "heapMb": 201.03
+      },
+      {
+        "elapsedSec": 15.7,
+        "heapMb": 220.79
+      },
+      {
+        "elapsedSec": 16.7,
+        "heapMb": 229.96
+      },
+      {
+        "elapsedSec": 17.7,
+        "heapMb": 249.84
+      },
+      {
+        "elapsedSec": 18.7,
+        "heapMb": 256.18
+      },
+      {
+        "elapsedSec": 19.7,
+        "heapMb": 276.39
+      },
+      {
+        "elapsedSec": 20.7,
+        "heapMb": 256.94
+      },
+      {
+        "elapsedSec": 21.7,
+        "heapMb": 268.12
+      },
+      {
+        "elapsedSec": 22.7,
+        "heapMb": 277.06
+      },
+      {
+        "elapsedSec": 23.7,
+        "heapMb": 291.82
+      },
+      {
+        "elapsedSec": 24.7,
+        "heapMb": 307.34
+      },
+      {
+        "elapsedSec": 25.7,
+        "heapMb": 319.04
+      },
+      {
+        "elapsedSec": 26.7,
+        "heapMb": 324.46
+      },
+      {
+        "elapsedSec": 27.7,
+        "heapMb": 333.21
+      },
+      {
+        "elapsedSec": 28.7,
+        "heapMb": 353.43
+      },
+      {
+        "elapsedSec": 29.7,
+        "heapMb": 365.51
+      },
+      {
+        "elapsedSec": 30.7,
+        "heapMb": 370.48
+      },
+      {
+        "elapsedSec": 31.7,
+        "heapMb": 377.6
+      },
+      {
+        "elapsedSec": 32.7,
+        "heapMb": 349.15
+      },
+      {
+        "elapsedSec": 33.7,
+        "heapMb": 356.4
+      },
+      {
+        "elapsedSec": 34.7,
+        "heapMb": 370.08
+      },
+      {
+        "elapsedSec": 35.7,
+        "heapMb": 401.88
+      },
+      {
+        "elapsedSec": 36.7,
+        "heapMb": 340.5
+      },
+      {
+        "elapsedSec": 37.7,
+        "heapMb": 372.4
+      },
+      {
+        "elapsedSec": 38.7,
+        "heapMb": 380.84
+      },
+      {
+        "elapsedSec": 39.7,
+        "heapMb": 379.02
+      },
+      {
+        "elapsedSec": 40.7,
+        "heapMb": 337.83
+      },
+      {
+        "elapsedSec": 41.7,
+        "heapMb": 342.12
+      },
+      {
+        "elapsedSec": 42.7,
+        "heapMb": 355.27
+      },
+      {
+        "elapsedSec": 43.7,
+        "heapMb": 387.82
+      },
+      {
+        "elapsedSec": 44.7,
+        "heapMb": 344.69
+      },
+      {
+        "elapsedSec": 45.8,
+        "heapMb": 344.28
+      },
+      {
+        "elapsedSec": 46.7,
+        "heapMb": 371.59
+      },
+      {
+        "elapsedSec": 47.8,
+        "heapMb": 371.24
+      },
+      {
+        "elapsedSec": 48.7,
+        "heapMb": 339.17
+      },
+      {
+        "elapsedSec": 49.8,
+        "heapMb": 343.04
+      },
+      {
+        "elapsedSec": 50.7,
+        "heapMb": 360.7
+      },
+      {
+        "elapsedSec": 51.8,
+        "heapMb": 394.31
+      },
+      {
+        "elapsedSec": 52.7,
+        "heapMb": 406.2
+      },
+      {
+        "elapsedSec": 53.8,
+        "heapMb": 421.45
+      },
+      {
+        "elapsedSec": 54.7,
+        "heapMb": 330.67
+      },
+      {
+        "elapsedSec": 55.8,
+        "heapMb": 361.25
+      },
+      {
+        "elapsedSec": 56.7,
+        "heapMb": 363.27
+      },
+      {
+        "elapsedSec": 57.8,
+        "heapMb": 399.02
+      },
+      {
+        "elapsedSec": 58.7,
+        "heapMb": 330.52
+      },
+      {
+        "elapsedSec": 59.8,
+        "heapMb": 366.21
+      },
+      {
+        "elapsedSec": 60.7,
+        "heapMb": 363.79
+      },
+      {
+        "elapsedSec": 61.8,
+        "heapMb": 375.23
+      },
+      {
+        "elapsedSec": 62.7,
+        "heapMb": 390.84
+      },
+      {
+        "elapsedSec": 63.8,
+        "heapMb": 402.48
+      },
+      {
+        "elapsedSec": 64.7,
+        "heapMb": 311.49
+      },
+      {
+        "elapsedSec": 65.8,
+        "heapMb": 359.42
+      },
+      {
+        "elapsedSec": 66.7,
+        "heapMb": 346.2
+      },
+      {
+        "elapsedSec": 67.8,
+        "heapMb": 355.96
+      },
+      {
+        "elapsedSec": 68.7,
+        "heapMb": 364.93
+      },
+      {
+        "elapsedSec": 69.8,
+        "heapMb": 407.63
+      },
+      {
+        "elapsedSec": 70.7,
+        "heapMb": 334.37
+      },
+      {
+        "elapsedSec": 71.7,
+        "heapMb": 342.98
+      },
+      {
+        "elapsedSec": 72.7,
+        "heapMb": 346.36
+      },
+      {
+        "elapsedSec": 73.7,
+        "heapMb": 350.07
+      },
+      {
+        "elapsedSec": 74.7,
+        "heapMb": 353.8
+      },
+      {
+        "elapsedSec": 75.7,
+        "heapMb": 357.16
+      },
+      {
+        "elapsedSec": 76.7,
+        "heapMb": 360.19
+      },
+      {
+        "elapsedSec": 77.7,
+        "heapMb": 330.14
+      },
+      {
+        "elapsedSec": 78.7,
+        "heapMb": 332.97
+      },
+      {
+        "elapsedSec": 79.7,
+        "heapMb": 335.89
+      },
+      {
+        "elapsedSec": 80.7,
+        "heapMb": 338.83
+      },
+      {
+        "elapsedSec": 81.7,
+        "heapMb": 341.74
+      },
+      {
+        "elapsedSec": 82.7,
+        "heapMb": 344.69
+      }
+    ],
+    "injectTimeMs": 40089.09999999404,
+    "ttffMs": 50.1,
+    "fullParseMs": 80.6,
+    "maxUiLockupMs": 83.30000000000291,
+    "totalFrozenMs": 618.0999999999767,
+    "stallCount": 10,
+    "fpsSamples": [
+      57,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      59,
+      60,
+      60,
+      60,
+      59,
+      60,
+      58,
+      60,
+      59,
+      60,
+      59,
+      60,
+      59,
+      60,
+      58,
+      60,
+      59,
+      60,
+      58,
+      60,
+      59,
+      60,
+      59,
+      60,
+      57,
+      60,
+      57,
+      60,
+      56,
+      60,
+      56,
+      60,
+      56,
+      60,
+      55,
+      60,
+      55,
+      60,
+      56,
+      60,
+      57,
+      60,
+      57,
+      60,
+      55,
+      60,
+      56,
+      60,
+      56,
+      60.1,
+      59.9,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "active": true
+  }
+}
