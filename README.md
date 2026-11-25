@@ -64,7 +64,7 @@ If you use VortexMD in your research, please cite this software (also available 
   title = {VortexMD: Serverless Out-of-Core Molecular Dynamics Trajectory Engine with WebGL 3D Visualization},
   version = {1.0.0},
   year = {2026},
-  url = {https://vortexmd.netlify.app}
+  url = {https://vortexmd.aarc.bio}
 }
 ```
 

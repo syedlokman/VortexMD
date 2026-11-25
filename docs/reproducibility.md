@@ -34,7 +34,7 @@ Outputs are written to `docs/benchmarks/` (`benchmark-multi-system-{raw.json,sum
 
 ## 2. Live Browser Console Benchmark (Head-to-Head)
 
-Use `scripts/console-head-to-head-benchmark.js` to compare **VortexMD** (`https://vortexmd.netlify.app`), **Mol\***, and **Native NGL** directly in Chrome or Brave:
+Use `scripts/console-head-to-head-benchmark.js` to compare **VortexMD** (`https://vortexmd.aarc.bio`), **Mol\***, and **Native NGL** directly in Chrome or Brave:
 
 1. *(Optional, for unrounded JS heap)* Launch Chrome or Brave with `--enable-precise-memory-info`:
    ```bash

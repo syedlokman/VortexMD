@@ -33,9 +33,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build production PWA for GitHub Pages
+      - name: Build production PWA for GitHub Pages (custom domain)
         env:
-          VITE_BASE_PATH: /VortexMD/
+          VITE_BASE_PATH: /
         run: npm run build
 
       - name: Setup Pages

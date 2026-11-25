@@ -2,7 +2,7 @@
  * scripts/console-head-to-head-benchmark.js
  *
  * Self-contained browser DevTools Console telemetry harness for head-to-head
- * benchmarking across VortexMD (https://vortexmd.netlify.app), Mol*, and Native NGL.
+ * benchmarking across VortexMD (https://vortexmd.aarc.bio), Mol*, and Native NGL.
  *
  * Usage:
  *   1. Open target viewer in Chromium/Chrome/Brave (launch with
