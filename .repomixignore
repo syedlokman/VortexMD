@@ -1,0 +1,20 @@
+# Lockfiles & dependencies
+package-lock.json
+bun.lock
+node_modules/
+
+# Static vector assets & media
+public/icons.svg
+public/favicon.svg
+public/demo/
+
+# Project administrative files & CI
+.github/
+CITATION.cff
+LICENSE
+benchmark-results.md
+
+# Build artifacts & temp files
+dist/
+coverage/
+.cache/

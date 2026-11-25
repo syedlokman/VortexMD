@@ -1,0 +1,5 @@
+System,Topology,Trajectory,Atoms,Frames,dt_ps,Size_MiB,Size_Label,TopoLoad_ms,TTFF_ms,TTFF_s,FullIndex_ms,Baseline_Heap_MB,Peak_Heap_MB,Mean_Heap_MB,Heap_Delta_MB,Mean_FPS,Mean_Latency_ms
+16pk_A,16pk_A.pdb,16pk_A.xtc,6378,1001,100,28.39,28.39 MB,143,62,0.06,16,9.61,24.16,13.89,14.54,60.7,16.48
+traj_7nx6,traj_7nx6.gro,traj_7nx6.xtc,222853,110,50,795.36,795.36 MB,342,113,0.11,3361,8.86,39.41,26.14,30.55,37.8,28.13
+md_rep1_noPBC_em1,md_rep1_noPBC_em1.gro,md_rep1_noPBC_em1.xtc,37006,10001,10,1270.84,1.24 GB,439,83,0.08,471,11.84,26.2,15.55,14.36,60.9,16.42
+PE_CL_530Run,PE_CL_530Run.gro,PE_CL_530Run.xtc,58500,26501,20,5499.35,5.37 GB,248,86,0.09,3422,8.82,13.44,12.14,4.62,60.3,16.58

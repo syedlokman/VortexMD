@@ -1,0 +1,8 @@
+Mode,Frames,VMD Min (A),VMD Max (A),VMD Mean (A),Max |Delta| vs Unrounded MDA (A),Mean |Delta| vs Unrounded MDA (A),RMSE vs Unrounded MDA (A),Pearson r,Max |Delta| after 3dp Round (A),Frames Differing after 3dp Round
+"16pk_A: C-alpha (fit=CA, calc=CA, ref=XTC f0)",1001,0.0,3.874,2.682,0.0005,0.000247,0.000286,0.999999717,0.0,0
+16pk_A: C-alpha aligned-path vs fast-path,1001,0.0,3.874,2.682,0.0,0.0,0.0,1.0,0.0,0
+"16pk_A: Backbone N,CA,C,O (ref=XTC f0)",1001,0.0,3.877,2.6904,0.000499,0.000249,0.000288,0.999999712,0.0,0
+"16pk_A: All-atom 6,378 (ref=XTC f0)",1001,0.0,4.284,3.1875,0.0005,0.000249,0.000288,0.999999667,0.0,0
+16pk_A: Separate Fit=CA / Calc=All (ref=XTC f0),1001,0.0,4.286,3.1895,0.0005,0.000249,0.000289,0.999999665,0.0,0
+16pk_A: C-alpha (VMD XTC-f0 vs MDA PDB ref),1001,0.0,3.874,2.682,0.0005,0.000247,0.000286,0.999999717,0.0,0
+demo.xtc (100f): C-alpha (ref=XTC f0),100,0.0,3.723,2.3958,0.000497,0.000235,0.000278,0.999999868,0.0,0

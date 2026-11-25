@@ -1,0 +1,941 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   VortexMD Centralized Tailwind CSS v4 Utilities & Design System
+   ========================================================================== */
+
+/* 1. Interactive Control Pills & Mini Action Cards */
+@utility control-pill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-slate-100, #f1f5f9);
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    border-radius: var(--radius-lg, 0.5rem);
+    padding: 0.25rem 0.5rem;
+    transition-property: background-color;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    gap: 0.25rem;
+    cursor: pointer;
+}
+.control-pill:hover {
+    background-color: var(--color-slate-200, #e2e8f0);
+}
+
+@utility invisible-select-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 20;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+@utility mini-action-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.125rem;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    color: var(--color-slate-700, #334155);
+    border-radius: var(--radius-lg, 0.5rem);
+    transition-property: background-color, border-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+.mini-action-card:hover {
+    background-color: var(--color-blue-50, #eff6ff);
+    border-color: var(--color-blue-200, #bfdbfe);
+    color: var(--color-blue-600, #2563eb);
+}
+
+@utility session-grid-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.25rem;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    color: var(--color-slate-700, #334155);
+    border-radius: var(--radius-lg, 0.5rem);
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition-property: background-color, border-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+.session-grid-btn:hover {
+    background-color: var(--color-blue-50, #eff6ff);
+    border-color: var(--color-blue-200, #bfdbfe);
+    color: var(--color-blue-600, #2563eb);
+}
+
+/* 1b. Sidebar Collapsed/Expanded Display Rules & Utility Classes */
+#sidebar[data-collapsed="true"] {
+    width: 4rem !important;
+}
+#sidebar[data-collapsed="true"] .when-expanded {
+    display: none !important;
+}
+#sidebar:not([data-collapsed="true"]) .when-collapsed {
+    display: none !important;
+}
+#sidebar[data-collapsed="true"] #session-buttons-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+#sidebar[data-collapsed="true"] .session-grid-btn span {
+    font-size: 8px !important;
+}
+
+@utility section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@utility icon-btn {
+    padding: 0.5rem;
+    background-color: #f1f5f9;
+    color: #475569;
+    border-radius: 0.75rem;
+    transition: background-color 150ms ease, color 150ms ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.icon-btn:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+@utility drop-zone {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #cbd5e1;
+    border-radius: 0.75rem;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 150ms ease;
+    position: relative;
+}
+.drop-zone:hover {
+    background-color: #eff6ff;
+    border-color: #60a5fa;
+}
+
+@utility btn-panel-primary {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    white-space: nowrap;
+    border-radius: 0.375rem;
+    background-color: var(--color-blue-600, #2563eb);
+    padding: 0.375rem 0.5rem;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+.btn-panel-primary:hover {
+    background-color: var(--color-blue-700, #1d4ed8);
+}
+
+@utility btn-panel-secondary {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+    border-radius: 0.375rem;
+    border: 1px solid var(--color-slate-300, #cbd5e1);
+    background-color: var(--color-slate-100, #f1f5f9);
+    padding: 0.375rem 0.5rem;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-slate-700, #334155);
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+.btn-panel-secondary:hover {
+    background-color: var(--color-slate-200, #e2e8f0);
+}
+
+@utility panel-card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-slate-200, #e2e8f0);
+    border-radius: var(--radius-lg, 0.5rem);
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+@utility form-label-xs {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-slate-700, #334155);
+}
+
+/* 2. Standardized Modal Scaffolds & Native HTML5 Dialog */
+dialog.modal-card {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    border-radius: var(--radius-2xl, 1rem);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--color-slate-800, #1e293b);
+    padding: 0;
+    margin: auto;
+}
+
+@utility modal-shell {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    border-radius: var(--radius-2xl, 1rem);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--color-slate-800, #1e293b);
+    padding: 0;
+    margin: auto;
+}
+
+@utility modal-header {
+    padding: 1rem 1.25rem;
+    border-bottom-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(248, 250, 252, 0.8);
+}
+
+@utility modal-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+@utility modal-footer {
+    padding: 0.875rem 1.25rem;
+    border-top-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(248, 250, 252, 0.8);
+}
+
+@utility stat-card {
+    background-color: var(--color-slate-50, #f8fafc);
+    border-width: 1px;
+    border-color: rgba(226, 232, 240, 0.8);
+    border-radius: var(--radius-xl, 0.75rem);
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@utility btn-modal-primary {
+    background-color: var(--color-blue-600, #2563eb);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-xl, 0.75rem);
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.btn-modal-primary:hover {
+    background-color: var(--color-blue-700, #1d4ed8);
+}
+
+@utility btn-modal-secondary {
+    background-color: var(--color-slate-100, #f1f5f9);
+    color: var(--color-slate-700, #334155);
+    border-width: 1px;
+    border-color: var(--color-slate-200, #e2e8f0);
+    padding: 0.5rem 0.875rem;
+    border-radius: var(--radius-xl, 0.75rem);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+.btn-modal-secondary:hover {
+    background-color: var(--color-slate-200, #e2e8f0);
+    color: var(--color-slate-900, #0f172a);
+}
+
+@utility btn-modal-danger {
+    background-color: var(--color-rose-50, #fff1f2);
+    color: var(--color-rose-700, #be123c);
+    border-width: 1px;
+    border-color: var(--color-rose-200, #fecdd3);
+    padding: 0.5rem 0.875rem;
+    border-radius: var(--radius-xl, 0.75rem);
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+.btn-modal-danger:hover {
+    background-color: var(--color-rose-100, #ffe4e6);
+}
+
+dialog:not([open]) {
+    display: none;
+}
+
+dialog::backdrop {
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+/* 2b. Native HTML5 Popover API Positioning & Top-Layer Overrides */
+[popover] {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+[popover]:not(:popover-open) {
+    display: none;
+}
+
+#focus-slice-popover:popover-open {
+    position: fixed;
+    inset: auto;
+    bottom: 5.5rem;
+    left: calc(50% + 4.5rem);
+    z-index: 50;
+}
+
+#pin-popover:popover-open {
+    position: fixed;
+    inset: auto;
+    bottom: 5.5rem;
+    left: calc(50% + 7.5rem);
+    z-index: 50;
+}
+
+#export-dropdown-menu:popover-open {
+    position: fixed;
+    inset: auto;
+    bottom: 5.5rem;
+    right: max(1.5rem, calc(50% - 22rem));
+    z-index: 50;
+}
+
+/* Modern CSS Anchor Positioning when supported */
+@supports (anchor-name: --test) {
+    #btn-focus-slice { anchor-name: --anchor-slice; }
+    #focus-slice-popover:popover-open {
+        position-anchor: --anchor-slice;
+        bottom: calc(anchor(top) + 8px);
+        right: anchor(right);
+        left: auto;
+    }
+
+    #btn-add-pin { anchor-name: --anchor-pin; }
+    #pin-popover:popover-open {
+        position-anchor: --anchor-pin;
+        bottom: calc(anchor(top) + 8px);
+        right: anchor(right);
+        left: auto;
+    }
+
+    #btn-export-menu { anchor-name: --anchor-export; }
+    #export-dropdown-menu:popover-open {
+        position-anchor: --anchor-export;
+        bottom: calc(anchor(top) + 8px);
+        right: anchor(right);
+    }
+}
+
+/* 3. Reusable Dynamic UI Table Rows & Buttons (Hotspot 1 Optimization) */
+@utility ui-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #e2e8f0;
+    gap: 4px;
+    transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+    user-select: none;
+    box-sizing: border-box;
+}
+.ui-item-row.active {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    opacity: 1;
+}
+.ui-item-row.dimmed {
+    opacity: 0.6;
+}
+.ui-item-row.row-purple {
+    background-color: #faf5ff;
+    border-color: #f3e8ff;
+}
+.ui-item-row.row-purple.active {
+    background-color: #faf5ff;
+    border-color: #e9d5ff;
+}
+
+@utility ui-del-btn {
+    background-color: #fee2e2;
+    border-width: 1px;
+    border-color: #fecaca;
+    border-radius: 5px;
+    width: 22px;
+    height: 24px;
+    min-width: 22px;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.15s ease;
+}
+.ui-del-btn:hover {
+    background-color: #fca5a5;
+}
+
+@utility eye-toggle-btn {
+    background-color: #f1f5f9;
+    border-width: 1px;
+    border-color: #cbd5e1;
+    border-radius: 6px;
+    width: 26px;
+    height: 24px;
+    min-width: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    color: #94a3b8;
+    flex-shrink: 0;
+}
+.eye-toggle-btn svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    flex-shrink: 0;
+}
+.eye-toggle-btn.active {
+    background-color: #e0f2fe;
+    border-color: #7dd3fc;
+    color: #0284c7;
+}
+
+/* 4. Drawer & Minibar Styles (Migrated from JS strings to Global CSS) */
+#drawer-mini, #drawer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    border-left: 1px solid #cbd5e1;
+    box-sizing: border-box;
+}
+
+#drawer-mini {
+    right: 0;
+    width: 70px;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 5px;
+    gap: 8px;
+    z-index: 35;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+    user-select: none;
+}
+
+#drawer.open ~ #drawer-mini,
+#drawer.open + #drawer-mini {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mini-btn, .mini-action-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    gap: 2px;
+    box-sizing: border-box;
+}
+.mini-btn {
+    padding: 6px 2px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #475569;
+}
+.mini-btn:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+.mini-btn.active {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 800;
+}
+.mini-btn svg {
+    flex-shrink: 0;
+    transition: transform 0.15s ease;
+}
+.mini-btn:hover svg {
+    transform: scale(1.1);
+}
+.mini-btn-label {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+.mini-badge {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+    text-align: center;
+    gap: 2px;
+}
+.mini-badge-title {
+    font-size: 9px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.mini-divider {
+    width: 32px;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2px 0;
+}
+
+.mini-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 4px 3px;
+    gap: 4px;
+    box-sizing: border-box;
+}
+.mini-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding-top: 2px;
+}
+.mini-box-title {
+    font-size: 9px;
+    font-weight: 800;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.mini-box-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 3px;
+    border-top: 1px solid #e2e8f0;
+}
+.mini-action-btn {
+    padding: 4px 1px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #334155;
+    font-size: 8px;
+    font-weight: 700;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+.mini-action-btn:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #2563eb;
+}
+.mini-action-btn.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+#drawer {
+    right: 0;
+    width: 360px;
+    z-index: 40;
+    transform: translateX(calc(100% + 20px));
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -10px 0 25px -5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 0;
+}
+#drawer.open {
+    transform: none;
+}
+@media (max-width: 768px) {
+    #drawer {
+        width: min(360px, 90vw);
+    }
+}
+
+.drawer-header {
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.drawer-tab-nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: #f1f5f9;
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    flex: 1;
+    min-width: 0;
+}
+.drawer-tab-btn {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+    white-space: nowrap;
+    user-select: none;
+    flex: 1;
+    text-align: center;
+}
+.drawer-tab-btn:hover {
+    color: #0f172a;
+}
+.drawer-tab-btn.active {
+    background: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    font-weight: 800;
+}
+.drawer-tab-panel {
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+}
+.drawer-tab-panel.active {
+    display: flex;
+}
+.drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.drawer-footer {
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 14px 20px;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.03);
+}
+.drawer-title {
+    font-weight: 900;
+    font-size: 13px;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.close-btn {
+    background: #f1f5f9;
+    border: none;
+    border-radius: 8px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    color: #64748b;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+.close-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.pymol-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pymol-card-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+details.pymol-card > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+details.pymol-card > summary::-webkit-details-marker {
+    display: none;
+}
+details.pymol-card > summary::after {
+    content: "▼";
+    font-size: 10px;
+    font-weight: 900;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.06);
+    color: currentColor;
+    flex-shrink: 0;
+}
+details.pymol-card:not([open]) > summary::after {
+    transform: rotate(-90deg);
+}
+.pymol-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #334155;
+    font-weight: 600;
+    padding: 4px 0;
+}
+.pymol-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.tree-indent {
+    margin-left: 14px;
+    border-left: 2px solid #cbd5e1;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Form Inputs inside Drawer */
+.drawer-body select,
+.drawer-body input[type="color"],
+.drawer-body input[type="range"],
+.drawer-body input[type="number"],
+.drawer-body input[type="text"],
+.drawer-body textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 3px 5px;
+    font-size: 11px;
+    background: white;
+    outline: none;
+    font-weight: 600;
+}
+.drawer-body input[type="color"] {
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+    padding: 1px;
+}
+.drawer-body input[type="checkbox"] {
+    accent-color: #2563eb;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.color-swatch-input {
+    width: 26px;
+    height: 24px;
+    min-width: 26px;
+    padding: 1px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.tree-sub-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 1px solid #f3e8ff;
+    gap: 4px;
+}
+.tree-del-btn {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 5px;
+    width: 22px;
+    height: 24px;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.tree-del-btn:hover {
+    background: #fca5a5;
+}
+.tree-style-container {
+    position: relative;
+    width: 34px;
+    height: 24px;
+    min-width: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.style-badge-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #334155;
+    pointer-events: none;
+    user-select: none;
+}
+
+.preset-chip {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 10px;
+    color: #1e293b;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.preset-chip:hover {
+    background: #e2e8f0;
+    border-color: #94a3b8;
+}
+
+/* Centered player control panel inside main workspace */
+#player-ui {
+    z-index: 30;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+#player-ui.settings-open {
+    left: calc((100% - 360px) / 2) !important;
+    max-width: min(calc(100% - 360px - 32px), 43.2rem) !important;
+}
+
+@media (max-width: 768px) {
+    #player-ui.settings-open {
+        left: calc((100% - min(360px, 90vw)) / 2) !important;
+        max-width: calc(100% - min(360px, 90vw) - 24px) !important;
+    }
+}

@@ -1,0 +1,21 @@
+Dataset,Measurement,Type,Unit,Frames,MDA Mean,VMD Mean,Max |Delta| Raw,Mean |Delta| Raw,RMSE Raw,Pearson r,Max |Delta| UI Round,Frames Differing UI Round
+16pk_A.xtc (1001f),D1_covalent_CA_C,distance,Å,1001,1.528,1.528,8e-06,2e-06,2e-06,0.999999997,0.0,0
+16pk_A.xtc (1001f),D2_local_CA_CA,distance,Å,1001,10.9124,10.9124,1e-05,2e-06,3e-06,1.0,0.0,0
+16pk_A.xtc (1001f),D3_midrange_CA_CA,distance,Å,1001,17.514,17.514,8e-06,2e-06,3e-06,1.0,0.0,0
+16pk_A.xtc (1001f),D4_longrange_CA_CA,distance,Å,1001,29.5955,29.5955,7e-06,2e-06,2e-06,1.0,0.0,0
+16pk_A.xtc (1001f),A1_backbone_N_CA_C,angle,°,1001,112.8891,112.8891,0.000442,0.000119,0.000148,0.999999999,0.1,1
+16pk_A.xtc (1001f),A2_peptide_CA_C_N,angle,°,1001,121.6624,121.6624,0.000718,0.00015,0.00019,0.999999998,0.0,0
+16pk_A.xtc (1001f),A3_domain_CA_CA_CA,angle,°,1001,93.8513,93.8513,1.7e-05,4e-06,5e-06,1.0,0.0,0
+16pk_A.xtc (1001f),T1_phi_res50,dihedral,°,1001,-82.3812,-82.3812,0.000647,0.000131,0.000164,1.0,0.0,0
+16pk_A.xtc (1001f),T2_psi_res50,dihedral,°,1001,18.3339,18.3339,0.000533,0.000114,0.000143,1.0,0.1,1
+16pk_A.xtc (1001f),T3_omega_res50_51,dihedral,°,1001,68.4662,68.4662,0.000472,0.000125,0.000154,1.0,0.1,2
+demo.xtc (100f),D1_covalent_CA_C,distance,Å,100,1.5253,1.5253,7e-06,2e-06,3e-06,0.999999997,0.0,0
+demo.xtc (100f),D2_local_CA_CA,distance,Å,100,10.9836,10.9836,9e-06,2e-06,3e-06,1.0,0.0,0
+demo.xtc (100f),D3_midrange_CA_CA,distance,Å,100,17.5211,17.5211,5e-06,2e-06,3e-06,1.0,0.0,0
+demo.xtc (100f),D4_longrange_CA_CA,distance,Å,100,29.9022,29.9022,6e-06,2e-06,2e-06,1.0,0.0,0
+demo.xtc (100f),A1_backbone_N_CA_C,angle,°,100,112.8953,112.8954,0.000379,0.00011,0.000141,0.999999999,0.0,0
+demo.xtc (100f),A2_peptide_CA_C_N,angle,°,100,121.303,121.303,0.000537,0.000155,0.000194,0.999999997,0.0,0
+demo.xtc (100f),A3_domain_CA_CA_CA,angle,°,100,93.2366,93.2366,1.5e-05,4e-06,5e-06,1.0,0.0,0
+demo.xtc (100f),T1_phi_res50,dihedral,°,100,-83.6054,-83.6054,0.000457,0.000144,0.000176,1.0,0.0,0
+demo.xtc (100f),T2_psi_res50,dihedral,°,100,39.6415,39.6415,0.000397,0.000111,0.000139,1.0,0.1,1
+demo.xtc (100f),T3_omega_res50_51,dihedral,°,100,47.7505,47.7505,0.000395,0.00012,0.000149,1.0,0.1,2

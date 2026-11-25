@@ -1,0 +1,477 @@
+{
+  "timestampUtc": "2026-11-24T18:19:36.288Z",
+  "hostPlatform": "darwin-arm64 (Apple M1, 8 GB RAM, macOS Metal ANGLE)",
+  "chromiumVersion": "156.0.8078.4",
+  "durationSeconds": 60,
+  "sampleIntervalSec": 5,
+  "systems": [
+    {
+      "name": "16pk_A",
+      "topologyFile": "16pk_A.pdb",
+      "xtcFile": "16pk_A.xtc",
+      "atomCountNum": 6378,
+      "atomCount": "6,378",
+      "totalFramesNum": 1001,
+      "totalFrames": "1,001",
+      "xtcBytes": 29767560,
+      "xtcMb": 28.39,
+      "trajectorySize": "28.39 MB",
+      "topoLoadMs": 143,
+      "ttffMs": 62,
+      "ttffSeconds": 0.06,
+      "baselineHeapMb": 9.61,
+      "peakHeapMb": 24.16,
+      "avgHeapMb": 13.89,
+      "heapDeltaMb": 14.54,
+      "meanFps": 60.7,
+      "meanLatencyMs": 16.48,
+      "timeseries": [
+        {
+          "elapsedSec": 0,
+          "heapMb": 9.61,
+          "fps": null,
+          "frameLatencyMs": null,
+          "currentFrame": 1
+        },
+        {
+          "elapsedSec": 5,
+          "heapMb": 13.18,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 156
+        },
+        {
+          "elapsedSec": 10,
+          "heapMb": 11.46,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 306
+        },
+        {
+          "elapsedSec": 15,
+          "heapMb": 11.09,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 457
+        },
+        {
+          "elapsedSec": 20,
+          "heapMb": 10,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 607
+        },
+        {
+          "elapsedSec": 25,
+          "heapMb": 17.05,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 758
+        },
+        {
+          "elapsedSec": 30,
+          "heapMb": 10.08,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 908
+        },
+        {
+          "elapsedSec": 35,
+          "heapMb": 10.2,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 58
+        },
+        {
+          "elapsedSec": 40,
+          "heapMb": 22.81,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 208
+        },
+        {
+          "elapsedSec": 45,
+          "heapMb": 24.16,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 358
+        },
+        {
+          "elapsedSec": 50,
+          "heapMb": 12.69,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 509
+        },
+        {
+          "elapsedSec": 55,
+          "heapMb": 11.55,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 659
+        },
+        {
+          "elapsedSec": 60,
+          "heapMb": 12.44,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 809
+        }
+      ],
+      "initialIndexedFrames": 1001,
+      "detectedDtPs": 100,
+      "fullIndexMs": 16
+    },
+    {
+      "name": "traj_7nx6",
+      "topologyFile": "traj_7nx6.gro",
+      "xtcFile": "traj_7nx6.xtc",
+      "atomCountNum": 222853,
+      "atomCount": "222,853",
+      "totalFramesNum": 110,
+      "totalFrames": "110",
+      "xtcBytes": 833994060,
+      "xtcMb": 795.36,
+      "trajectorySize": "795.36 MB",
+      "topoLoadMs": 342,
+      "ttffMs": 113,
+      "ttffSeconds": 0.11,
+      "baselineHeapMb": 8.86,
+      "peakHeapMb": 39.41,
+      "avgHeapMb": 26.14,
+      "heapDeltaMb": 30.55,
+      "meanFps": 37.8,
+      "meanLatencyMs": 28.13,
+      "timeseries": [
+        {
+          "elapsedSec": 0,
+          "heapMb": 8.86,
+          "fps": null,
+          "frameLatencyMs": null,
+          "currentFrame": 1
+        },
+        {
+          "elapsedSec": 5,
+          "heapMb": 18.85,
+          "fps": 40,
+          "frameLatencyMs": 25,
+          "currentFrame": 43
+        },
+        {
+          "elapsedSec": 10,
+          "heapMb": 13.62,
+          "fps": 41,
+          "frameLatencyMs": 24.39,
+          "currentFrame": 86
+        },
+        {
+          "elapsedSec": 15,
+          "heapMb": 16.31,
+          "fps": 41,
+          "frameLatencyMs": 24.39,
+          "currentFrame": 17
+        },
+        {
+          "elapsedSec": 20,
+          "heapMb": 39.41,
+          "fps": 42,
+          "frameLatencyMs": 23.81,
+          "currentFrame": 57
+        },
+        {
+          "elapsedSec": 25,
+          "heapMb": 37.2,
+          "fps": 43,
+          "frameLatencyMs": 23.26,
+          "currentFrame": 99
+        },
+        {
+          "elapsedSec": 30,
+          "heapMb": 25.34,
+          "fps": 37,
+          "frameLatencyMs": 27.03,
+          "currentFrame": 31
+        },
+        {
+          "elapsedSec": 35,
+          "heapMb": 33.95,
+          "fps": 17,
+          "frameLatencyMs": 58.82,
+          "currentFrame": 72
+        },
+        {
+          "elapsedSec": 40,
+          "heapMb": 26.37,
+          "fps": 41,
+          "frameLatencyMs": 24.39,
+          "currentFrame": 5
+        },
+        {
+          "elapsedSec": 45,
+          "heapMb": 29.69,
+          "fps": 32,
+          "frameLatencyMs": 31.25,
+          "currentFrame": 46
+        },
+        {
+          "elapsedSec": 50,
+          "heapMb": 30.64,
+          "fps": 39,
+          "frameLatencyMs": 25.64,
+          "currentFrame": 87
+        },
+        {
+          "elapsedSec": 55,
+          "heapMb": 29.87,
+          "fps": 38,
+          "frameLatencyMs": 26.32,
+          "currentFrame": 20
+        },
+        {
+          "elapsedSec": 60,
+          "heapMb": 12.45,
+          "fps": 43,
+          "frameLatencyMs": 23.26,
+          "currentFrame": 60
+        }
+      ],
+      "initialIndexedFrames": 100,
+      "detectedDtPs": 50,
+      "fullIndexMs": 3361
+    },
+    {
+      "name": "md_rep1_noPBC_em1",
+      "topologyFile": "md_rep1_noPBC_em1.gro",
+      "xtcFile": "md_rep1_noPBC_em1.xtc",
+      "atomCountNum": 37006,
+      "atomCount": "37,006",
+      "totalFramesNum": 10001,
+      "totalFrames": "10,001",
+      "xtcBytes": 1332574984,
+      "xtcMb": 1270.84,
+      "trajectorySize": "1.24 GB",
+      "topoLoadMs": 439,
+      "ttffMs": 83,
+      "ttffSeconds": 0.08,
+      "baselineHeapMb": 11.84,
+      "peakHeapMb": 26.2,
+      "avgHeapMb": 15.55,
+      "heapDeltaMb": 14.36,
+      "meanFps": 60.9,
+      "meanLatencyMs": 16.42,
+      "timeseries": [
+        {
+          "elapsedSec": 0,
+          "heapMb": 11.84,
+          "fps": null,
+          "frameLatencyMs": null,
+          "currentFrame": 1
+        },
+        {
+          "elapsedSec": 5,
+          "heapMb": 26.2,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 152
+        },
+        {
+          "elapsedSec": 10,
+          "heapMb": 13.5,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 302
+        },
+        {
+          "elapsedSec": 15,
+          "heapMb": 12.03,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 452
+        },
+        {
+          "elapsedSec": 20,
+          "heapMb": 13.55,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 602
+        },
+        {
+          "elapsedSec": 25,
+          "heapMb": 19.22,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 753
+        },
+        {
+          "elapsedSec": 30,
+          "heapMb": 15.11,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 903
+        },
+        {
+          "elapsedSec": 35,
+          "heapMb": 12.02,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1053
+        },
+        {
+          "elapsedSec": 40,
+          "heapMb": 13.67,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 1203
+        },
+        {
+          "elapsedSec": 45,
+          "heapMb": 10.51,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1353
+        },
+        {
+          "elapsedSec": 50,
+          "heapMb": 12.1,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1504
+        },
+        {
+          "elapsedSec": 55,
+          "heapMb": 19.3,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1654
+        },
+        {
+          "elapsedSec": 60,
+          "heapMb": 19.32,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1804
+        }
+      ],
+      "initialIndexedFrames": 472,
+      "detectedDtPs": 10,
+      "fullIndexMs": 471
+    },
+    {
+      "name": "PE_CL_530Run",
+      "topologyFile": "PE_CL_530Run.gro",
+      "xtcFile": "PE_CL_530Run.xtc",
+      "atomCountNum": 58500,
+      "atomCount": "58,500",
+      "totalFramesNum": 26501,
+      "totalFrames": "26,501",
+      "xtcBytes": 5766486676,
+      "xtcMb": 5499.35,
+      "trajectorySize": "5.37 GB",
+      "topoLoadMs": 248,
+      "ttffMs": 86,
+      "ttffSeconds": 0.09,
+      "baselineHeapMb": 8.82,
+      "peakHeapMb": 13.44,
+      "avgHeapMb": 12.14,
+      "heapDeltaMb": 4.62,
+      "meanFps": 60.3,
+      "meanLatencyMs": 16.58,
+      "timeseries": [
+        {
+          "elapsedSec": 0,
+          "heapMb": 8.82,
+          "fps": null,
+          "frameLatencyMs": null,
+          "currentFrame": 1
+        },
+        {
+          "elapsedSec": 5,
+          "heapMb": 13.44,
+          "fps": 56,
+          "frameLatencyMs": 17.86,
+          "currentFrame": 151
+        },
+        {
+          "elapsedSec": 10,
+          "heapMb": 11.8,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 301
+        },
+        {
+          "elapsedSec": 15,
+          "heapMb": 12.78,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 451
+        },
+        {
+          "elapsedSec": 20,
+          "heapMb": 11.11,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 602
+        },
+        {
+          "elapsedSec": 25,
+          "heapMb": 11.32,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 752
+        },
+        {
+          "elapsedSec": 30,
+          "heapMb": 11.97,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 903
+        },
+        {
+          "elapsedSec": 35,
+          "heapMb": 12.01,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1053
+        },
+        {
+          "elapsedSec": 40,
+          "heapMb": 11.31,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1203
+        },
+        {
+          "elapsedSec": 45,
+          "heapMb": 12.01,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1354
+        },
+        {
+          "elapsedSec": 50,
+          "heapMb": 12.9,
+          "fps": 61,
+          "frameLatencyMs": 16.39,
+          "currentFrame": 1504
+        },
+        {
+          "elapsedSec": 55,
+          "heapMb": 12.21,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 1655
+        },
+        {
+          "elapsedSec": 60,
+          "heapMb": 12.75,
+          "fps": 60,
+          "frameLatencyMs": 16.67,
+          "currentFrame": 1805
+        }
+      ],
+      "initialIndexedFrames": 96,
+      "detectedDtPs": 20,
+      "fullIndexMs": 3422
+    }
+  ]
+}
