@@ -440,17 +440,20 @@ export function initLoaderPanel({ engine, listen }) {
 
                 try {
                     showToast("Loading bundled sample simulation...", "info");
-                    logger.log('info', 'SAMPLE', 'Loading bundled sample files from /demo/demo.pdb and /demo/demo.xtc (Phosphoglycerate kinase, glycosomal)');
+                    const baseUrl = import.meta.env?.BASE_URL || '/';
+                    const demoPdbUrl = `${baseUrl}demo/demo.pdb`;
+                    const demoXtcUrl = `${baseUrl}demo/demo.xtc`;
+                    logger.log('info', 'SAMPLE', `Loading bundled sample files from ${demoPdbUrl} and ${demoXtcUrl} (Phosphoglycerate kinase, glycosomal)`);
 
                     if (quickStatusLabel) quickStatusLabel.innerText = "Fetching topology (.pdb) & trajectory (.xtc)...";
 
                     const topolPromise = (async () => {
                         updateQuickPdbProgress(5, "Connecting...", "Connecting...");
-                        const pdbRes = await fetch('/demo/demo.pdb');
-                        if (!pdbRes.ok) throw new Error(`Failed to load /demo/demo.pdb (HTTP ${pdbRes.status})`);
+                        const pdbRes = await fetch(demoPdbUrl);
+                        if (!pdbRes.ok) throw new Error(`Failed to load ${demoPdbUrl} (HTTP ${pdbRes.status})`);
                         const contentType = pdbRes.headers.get('content-type') || '';
                         if (contentType.includes('text/html')) {
-                            throw new Error('/demo/demo.pdb not found (server returned HTML). Please ensure demo.pdb is placed in public/demo/.');
+                            throw new Error(`${demoPdbUrl} not found (server returned HTML). Please ensure demo.pdb is placed in public/demo/.`);
                         }
 
                         const { chunks } = await readStreamWithProgress(pdbRes, 504073, (pct, receivedBytes, totalBytes) => {
@@ -475,11 +478,11 @@ export function initLoaderPanel({ engine, listen }) {
 
                     const trajPromise = (async () => {
                         updateQuickXtcProgress(5, "Connecting...", "Connecting...");
-                        const xtcRes = await fetch('/demo/demo.xtc');
-                        if (!xtcRes.ok) throw new Error(`Failed to load /demo/demo.xtc (HTTP ${xtcRes.status})`);
+                        const xtcRes = await fetch(demoXtcUrl);
+                        if (!xtcRes.ok) throw new Error(`Failed to load ${demoXtcUrl} (HTTP ${xtcRes.status})`);
                         const contentType = xtcRes.headers.get('content-type') || '';
                         if (contentType.includes('text/html')) {
-                            throw new Error('/demo/demo.xtc not found. Please upload your original demo.xtc into public/demo/.');
+                            throw new Error(`${demoXtcUrl} not found. Please upload your original demo.xtc into public/demo/.`);
                         }
 
                         const { chunks } = await readStreamWithProgress(xtcRes, 7654000, (pct, receivedBytes, totalBytes) => {
