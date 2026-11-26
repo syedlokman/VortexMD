@@ -104,9 +104,9 @@ export const PRESETS = [
 ];
 
 export const ZENODO = [
-    [21988409, '1. Hen Egg-White Lysozyme (HEWL)', 'GROMACS 100-frame MD simulation of Lysozyme in explicit aqueous solvent with counter-ions (25,000+ atoms).', ['md_1.gro', '~9.1 MB'], ['md_1.xtc', '~24.9 MB']],
-    [10068574, '2. SARS-CoV-2 Main Protease (Mpro)', 'All-atom MD simulation trajectory of SARS-CoV-2 Mpro catalytic domain resolving binding pocket flexibility.', ['topology.gro', '~4.8 MB'], ['trajectory.xtc', '~18.2 MB']],
-    [7847391, '3. Trp-Cage Miniprotein (TC5b)', 'Fast folding-unfolding conformational trajectory of the 20-residue Trp-cage TC5b miniprotein in water.', ['system.gro', '~1.9 MB'], ['traj.xtc', '~8.5 MB']]
+    [21475591, '1. Chalcone Protein–Drug Complex', 'All-atom GROMACS MD trajectory of a chalcone derivative complex (37,006 atoms, 10,001 frames; E. W. de Alencar Pereira, 2026).', ['solv_ions_EM1.gro', '1.7 MB'], ['md_rep1_noPBC_em1.xtc', '1.3 GB']],
+    [5111905, '2. SARS-CoV-2 RBD–Fab Complex (7NX6)', 'All-atom MD simulation of the SARS-CoV-2 P.1 variant RBD–Fab complex (222,853 atoms, 110 frames; Oliveira et al., 2021).', ['traj_7nx6.gro', '15.4 MB'], ['traj_7nx6.xtc', '834.0 MB']],
+    [13984201, '3. POPE/TOCL Lipid Bilayer Mixture', 'All-atom GROMACS trajectory of a POPE/TOCL lipid membrane bilayer (58,500 atoms, 26,501 frames; M. Doktorova, 2023).', ['PE_CL_Run.gro', '4.0 MB'], ['PE_CL_530Run.xtc', '5.8 GB']]
 ];
 
 export const TABS = [

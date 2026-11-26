@@ -32,9 +32,9 @@ Measured in live Chrome 156 (`--enable-precise-memory-info`) via `scripts/consol
 
 All external trajectory datasets used in these benchmarks are publicly available from open repositories:
 
-| Benchmark ID | System | Repository / Persistent Identifier |
-| :--- | :--- | :--- |
-| **16pk_A** | Phosphoglycerate kinase (`16pk_A`) | [ATLAS Database of Biomolecular Simulations](https://www.dsimb.inserm.fr/ATLAS/database/ATLAS/16pk_A/16pk_A.html) |
-| **traj_7nx6** | SARS-CoV-2 RBD–Fab (7NX6) | Zenodo, DOI: `10.5281/zenodo.5111905` |
-| **md_rep1_noPBC_em1** | Chalcone Protein–Drug Complex | Zenodo, DOI: `10.5281/zenodo.21475591` |
-| **PE_CL_530Run** | PE/CL Lipid Bilayer | Zenodo, DOI: `10.5281/zenodo.13984201` |
+| Benchmark ID | System & Author(s) | Exact Source Files | Repository / Identifier |
+| :--- | :--- | :--- | :--- |
+| **16pk_A** | Phosphoglycerate kinase, glycosomal (`16pk_A`) | `16pk_A.pdb`, `16pk_A.xtc` | [ATLAS Database](https://www.dsimb.inserm.fr/ATLAS/database/ATLAS/16pk_A/16pk_A.html) |
+| **traj_7nx6** | Molecular dynamics of the P.1 variant of SARS-CoV-2 (*Oliveira et al., 2021*) | `traj_7nx6.gro` (15.4 MB), `traj_7nx6.xtc` (834.0 MB) | Zenodo `#5111905` (`zenodo.org/records/5111905`; bioRxiv DOI: `10.1101/2021.04.09.439181`) |
+| **md_rep1_noPBC_em1** | Chalcone derivates MD -ewap (*E. W. de Alencar Pereira, 2026*) | `solv_ions_EM1.gro` (1.7 MB), `md_rep1_noPBC_em1.xtc` (1.3 GB) | Zenodo `#21475591`, DOI: `10.5281/zenodo.21475591` |
+| **PE_CL_530Run** | All-atom Gromacs Trajectory of POPE/TOCL bilayer mixture (*M. Doktorova, 2023*) | `PE_CL_Run.gro` (4.0 MB), `PE_CL_530Run.xtc` (5.8 GB) | Zenodo `#13984201`, DOI: `10.5281/zenodo.13984201` |

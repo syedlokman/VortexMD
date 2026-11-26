@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use VortexMD in your research, please cite it as below."
-title: "VortexMD: Serverless Out-of-Core Molecular Dynamics Trajectory Engine with WebGL 3D Visualization"
+title: "VortexMD: A Client-Side, Out-of-Core Explorer for GROMACS Trajectories"
 type: software
 version: 1.0.0
 date-released: 2026-09-08

@@ -13,7 +13,7 @@
    npx playwright install chromium
    npm run build
    ```
-2. Download any of the four public benchmark datasets (see [Benchmark Datasets](../README.md#benchmark-datasets)) into a folder (default `../benchmarks_multi_system/`) with matching topology/trajectory basenames:
+2. Download any of the four public benchmark datasets (see [Benchmark Datasets](../README.md#benchmark-datasets)) into a folder (default `../benchmarks_multi_system/`) with matching topology/trajectory basenames (rename `solv_ions_EM1.gro` → `md_rep1_noPBC_em1.gro` and `PE_CL_Run.gro` → `PE_CL_530Run.gro` so the script pairs them automatically):
    ```text
    benchmarks_multi_system/
    ├── 16pk_A.pdb                  + 16pk_A.xtc

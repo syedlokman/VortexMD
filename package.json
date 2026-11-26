@@ -20,7 +20,7 @@
     "lint": "vite build && node scripts/check-boundaries.mjs",
     "check:boundaries": "node scripts/check-boundaries.mjs",
     "test": "vitest run",
-    "benchmark": "node scripts/benchmark-memory.js http://localhost:3000 180"
+    "benchmark": "node scripts/run-benchmark-offline.mjs 60 ../benchmarks_multi_system ./docs/benchmarks 5"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

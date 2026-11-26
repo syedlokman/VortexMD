@@ -47,12 +47,12 @@ Like PyMOL and Mol*, VortexMD does not unwrap periodic boundary conditions (PBC)
 
 ## Benchmark Datasets
 
-All external trajectory datasets used in the empirical benchmarks and validation are publicly accessible from open repositories:
+All external trajectory datasets used in the empirical benchmarks and validation are publicly accessible from open repositories (and directly downloadable from the app's **Load Sample Files → Local Download** tab):
 
-- **`16pk_A`**: [ATLAS Database of Biomolecular Simulations](https://www.dsimb.inserm.fr/ATLAS/database/ATLAS/16pk_A/16pk_A.html) (also used for MDAnalysis numerical validation and the bundled 100-frame demo).
-- **Chalcone Protein–Drug Complex (`md_rep1_noPBC_em1`)**: Zenodo, DOI: `10.5281/zenodo.21475591`.
-- **PE/CL Lipid Bilayer (`PE_CL_530Run`)**: Zenodo, DOI: `10.5281/zenodo.13984201`.
-- **SARS-CoV-2 RBD–Fab (`traj_7nx6`)**: Zenodo, DOI: `10.5281/zenodo.5111905`.
+- **Phosphoglycerate kinase, glycosomal (`16pk_A`)**: [ATLAS Database of Biomolecular Simulations](https://www.dsimb.inserm.fr/ATLAS/database/ATLAS/16pk_A/16pk_A.html) (also used for MDAnalysis numerical validation and the bundled 100-frame Quick Load demo).
+- **Chalcone derivates MD -ewap** (*E. W. de Alencar Pereira, 2026*): Zenodo `#21475591`, DOI: `10.5281/zenodo.21475591` (`solv_ions_EM1.gro` + `md_rep1_noPBC_em1.xtc`).
+- **Molecular dynamics of the P.1 variant of SARS-CoV-2** (*Oliveira et al., 2021*): Zenodo `#5111905` (`https://zenodo.org/records/5111905`; bioRxiv DOI: `10.1101/2021.04.09.439181`; `traj_7nx6.gro` + `traj_7nx6.xtc`).
+- **All-atom Gromacs Trajectory of POPE/TOCL bilayer mixture** (*M. Doktorova, 2023*): Zenodo `#13984201`, DOI: `10.5281/zenodo.13984201` (`PE_CL_Run.gro` + `PE_CL_530Run.xtc`).
 
 ## Citation
 
@@ -61,7 +61,7 @@ If you use VortexMD in your research, please cite this software (also available 
 ```bibtex
 @software{vortexmd2026,
   author = {Lokman, Syed Mohammad},
-  title = {VortexMD: Serverless Out-of-Core Molecular Dynamics Trajectory Engine with WebGL 3D Visualization},
+  title = {VortexMD: A Client-Side, Out-of-Core Explorer for GROMACS Trajectories},
   version = {1.0.0},
   year = {2026},
   url = {https://vortexmd.aarc.bio}
