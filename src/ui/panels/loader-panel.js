@@ -338,7 +338,7 @@ export function initLoaderPanel({ engine, listen }) {
         if (quickXtcProgressBar) quickXtcProgressBar.style.width = '0%';
         if (quickXtcPct) quickXtcPct.innerText = '0%';
         if (quickXtcStatus) quickXtcStatus.innerText = 'Idle';
-        if (quickXtcCounter) quickXtcCounter.innerText = '0.0 / ~7.3 MB';
+        if (quickXtcCounter) quickXtcCounter.innerText = '0.0 / ~3.0 MB';
 
         refreshIcons();
     };
@@ -485,7 +485,7 @@ export function initLoaderPanel({ engine, listen }) {
                             throw new Error(`${demoXtcUrl} not found. Please upload your original demo.xtc into public/demo/.`);
                         }
 
-                        const { chunks } = await readStreamWithProgress(xtcRes, 7654000, (pct, receivedBytes, totalBytes) => {
+                        const { chunks } = await readStreamWithProgress(xtcRes, 2970644, (pct, receivedBytes, totalBytes) => {
                             updateQuickXtcProgress(
                                 pct,
                                 `Loading (${(receivedBytes / 1048576).toFixed(1)} MB)...`,

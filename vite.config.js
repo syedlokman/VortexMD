@@ -28,9 +28,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'public/*'],
       manifest: {
-        name: 'VortexMD - Virtual Out-of-core Ring-buffered Trajectory EXplorer for Molecular Dynamics',
+        name: 'VortexMD: A Client-Side, Out-of-Core Explorer for GROMACS Trajectories',
         short_name: 'VortexMD',
-        description: 'Virtual Out-of-core Ring-buffered Trajectory EXplorer for Molecular Dynamics with WebGL 3D Visualization',
+        description: 'A Client-Side, Out-of-Core Explorer for GROMACS Trajectories',
         theme_color: '#2563eb',
         background_color: '#ffffff',
         display: 'standalone',
@@ -47,7 +47,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,wasm}', 'demo/demo.pdb'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
-        navigateFallbackDenylist: [/^\/.*\.(xtc|gro|pdb|cif)$/i, /^\/component-demo\.html$/i],
+        navigateFallbackDenylist: [/^\/.*\.(xtc|gro|pdb|cif)$/i],
         runtimeCaching: [
           {
             // Allow bundled demo topology to be cached for offline demonstration

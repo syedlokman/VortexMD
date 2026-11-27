@@ -1,6 +1,10 @@
 {
   "name": "vortexmd",
   "version": "1.0.0",
+  "description": "VortexMD: A Client-Side, Out-of-Core Explorer for GROMACS Trajectories",
+  "homepage": "https://vortexmd.aarc.bio",
+  "repository": "https://github.com/syedlokman/VortexMD",
+  "license": "AGPL-3.0-only",
   "private": true,
   "type": "module",
   "sideEffects": false,

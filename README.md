@@ -1,8 +1,10 @@
 # VortexMD
 
-> **Zero-backend, out-of-core molecular dynamics trajectory viewer and analyzer for the browser.**
+> **A Client-Side, Out-of-Core Explorer for GROMACS Trajectories**
 
 **VortexMD** (*Virtual Out-of-core Ring-buffered Trajectory EXplorer for Molecular Dynamics*) is an open-source, client-side Progressive Web App (PWA) for visualizing and analyzing multi-gigabyte molecular dynamics (MD) trajectories directly in modern web browsers—with no server uploads, no cloud storage, and no local software installation required.
+
+**Live Web App:** [https://vortexmd.aarc.bio](https://vortexmd.aarc.bio) *(backup mirror: [https://vortexmd.netlify.app](https://vortexmd.netlify.app))*
 
 ## Key Capabilities
 
@@ -36,7 +38,8 @@ Like PyMOL and Mol*, VortexMD does not unwrap periodic boundary conditions (PBC)
 
 | Document | Summary |
 | :--- | :--- |
-| [**Player & Controls Guide**](docs/player-and-controls.md) | Playback, A/B looping, timeline pins, mouse presets, custom selections, media export, sessions, and offline PWA. |
+| [**Player & Controls Guide**](docs/player-and-controls.md) | Playback, A/B looping, timeline pins, mouse presets, custom selections, media export, and sessions. |
+| [**Offline Use (PWA Guide)**](docs/offline-pwa.md) | How to install VortexMD as a standalone desktop/mobile app and analyze trajectories offline. |
 | [**RMSD & 3D Measurements**](docs/rmsd-and-measurements.md) | Closed-form Horn quaternion RMSD, 3D distances/angles/dihedrals, and MDAnalysis v2.11.0 validation results. |
 | [**Engine Workflow**](docs/engine-workflow.md) | Out-of-core `.xtc` streaming, binary indexing, IndexedDB caching, ring buffer, Web Workers, and PWA caching. |
 | [**Software Architecture & Boundaries**](docs/ARCHITECTURE.md) | Three-tier decoupling, `PUBLIC_API` & `EVENTS` contracts, and automated boundary enforcement. |
